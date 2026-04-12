@@ -6,14 +6,11 @@ function inputFunction (a,b,opt){
 else if (opt === '*') result = multipyNum(a,b)
   else if (opt === '/'&& b !== 0) result = divideNum(a,b)
 
-  function historyStore(){
-    if(historyTag.push(result)){
-  console.log(`your result is ${result}`) ;
- }else{
-  return `you dont have any saved shit`
- }}
+historyTag.push(`${a} ${opt} ${b} = ${result}`)
+  
  
-return historyStore()
+ 
+return result
 }
 
 function addNum(a,b){
@@ -30,3 +27,5 @@ function divideNum(a,b){
 }
 
 console.log(inputFunction(2,3,'*'))
+console.log(inputFunction(2,3,'-'))
+console.log(`added history tag ${historyTag}`)
