@@ -4,7 +4,7 @@ function inputFunction (a,b,opt){
  if (opt === '+')result = addNum(a,b)//
   else if (opt === '-')result = subtractNum(a,b)
 else if (opt === '*') result = multipyNum(a,b)
-  else if (opt === '/'|| b === 0) result = divideNum(a,b)
+  else if (opt === '/'&& b !== 0) result = divideNum(a,b)
 
   function historyStore(){
     if(historyTag.push(result)){
