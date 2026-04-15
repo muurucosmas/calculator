@@ -1,0 +1,81 @@
+*,
+::before,
+::after{
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+ 
+}
+/* each dropdown box */
+details {
+  background: white;
+  margin-bottom: 15px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  cursor: pointer;
+}
+div{
+  display: flex;
+  flex-direction: row;
+}
+/* the clickable title */
+summary {
+  font-size: 18px;
+  font-weight: bold;
+  list-style: none;
+  outline: none;
+}
+input {
+ width: 400px;
+ height: 50px;
+  font-size: 16px;
+  border: 2px solid #000;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 10px;
+  border-radius: 30px;
+}
+
+button {
+margin-top: 10px;
+  font-size: 16px;
+  background-color:white ;
+  color: black;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 300px;
+  height: 50px;
+  border-radius: 30px;
+}
+
+button:hover {
+  background: #333;
+}
+div >details{
+  width: 500px;
+  text-align: center;
+}
+img {
+  margin-top: 20px;
+  width: 500px;
+  height: 500px;
+  display: none;
+  object-fit:contain ;
+  background: white;
+  border-radius: 12px;
+  padding: 16px;
+}

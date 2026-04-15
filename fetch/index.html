@@ -3,14 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Pokémon Finder</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <input type="text" id="pockemonName" placeholder="Enter pockemon" > 
-  <button id="search-btn">fecth pockemon</button>
-  <br>
-  <img src="" alt="pockemon pics" id="pokemonSprite" display = "none">
+<form id="form">
+  <input type="text" id="pokemonName" placeholder="Enter Pokémon">
+
+  <button type="submit" id="search-btn">Fetch Pokémon</button>
+</form>
+  <br><br>
+  <div>
+    <details>
+<details>
+  <summary>🔥 Strong / Popular Pokémon</summary>
+  <ul>
+    <li>Charizard</li>
+    <li>Blastoise</li>
+    <li>Venusaur</li>
+    <li>Gengar</li>
+    <li>Dragonite</li>
+    <li>Alakazam</li>
+  </ul>
+</details>
+ <summary>pokemon</summary>
+<details>
+  <summary>⚔️ Legendary Pokémon</summary>
+  <ul>
+    <li>Mewtwo</li>
+    <li>Mew</li>
+    <li>Lugia</li>
+    <li>Ho-Oh</li>
+    <li>Rayquaza</li>
+    <li>Groudon</li>
+    <li>Kyogre</li>
+  </ul>
+</details>
+
+<details>
+  <summary>🐉 Cool Fan Favorites</summary>
+  <ul>
+    <li>Lucario</li>
+    <li>Gengar</li>
+    <li>Greninja</li>
+    <li>Umbreon</li>
+    <li>Sylveon</li>
+  </ul>
+</details>
+</details>
+</div>
+<div>
+  <img id="pokemonSprite" src="" alt="Pokémon image" style="display:none;">
+</div>
   <script src="pockeman.js"></script>
+
 </body>
 </html>
